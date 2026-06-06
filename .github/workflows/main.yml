@@ -2,9 +2,8 @@ name: 莊頭北每日巡邏排程
 
 on:
   schedule:
-    # 這是世界標準時間(UTC)。台灣時間早上 9 點 = UTC 凌晨 1 點
     - cron: '0 1 * * *'
-  workflow_dispatch: # 加上這個魔法按鈕，讓老大隨時可以手動按「啟動」
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -12,10 +11,10 @@ jobs:
 
     steps:
     - name: 打開倉庫拿程式碼
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # ✨ 這裡升級成 v4 了！
 
     - name: 準備 Python 工作桌
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5  # ✨ 這裡升級成 v5 了！
       with:
         python-version: '3.10'
 
