@@ -18,8 +18,8 @@ print("🤖 機器人出動！開始巡邏莊頭北商品...")
 
 # --- 【第三步：設定 Telegram 密碼】 ---
 # 🚨 老大！請務必把下面這兩個換成你真正的密碼！(引號要留著喔)
-機器人暗號 = "請貼上你的_BotFather_Token" 
-老大的號碼 = "請貼上你的_Chat_ID"
+機器人暗號 = "8762067732:AAGfkpfYqozSbHzcwb8aSi-gQAgtnUo9cKg" 
+老大的號碼 = "8913656476"
 
 郵差網址 = f"https://api.telegram.org/bot{機器人暗號}/sendMessage"
 
